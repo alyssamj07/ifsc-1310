@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cycle Lab - Image Slideshow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe4e1;
+      text-align: center;
+      padding: 50px;
+    }
+    img {
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cycle Lab - Image Slideshow</h1>
+
+  <img id="slideshow" src="image1.jpg" alt="Slideshow Image">
+
+  <br><br>
+  <button onclick="nextImage()">Next Image</button>
+
+  <script>
+    const images = [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg"
+    ];
+
+    let current = 0;
+
+    function nextImage() {
+      current++;
+      if (current >= images.length) {
+        current = 0;
+      }
+      document.getElementById("slideshow").src = images[current];
+    }
+  </script>
+
+</body>
+</html>
