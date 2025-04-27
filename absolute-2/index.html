@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Absolute 2</title>
+  <style>
+    #wrapper {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: #fff0f5;
+      border: 2px dashed pink;
+    }
+    .box1 {
+      width: 80px;
+      height: 80px;
+      background: hotpink;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    .box2 {
+      width: 80px;
+      height: 80px;
+      background: lightcoral;
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+    }
+    .box3 {
+      width: 80px;
+      height: 80px;
+      background: plum;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+
+</body>
+</html>
