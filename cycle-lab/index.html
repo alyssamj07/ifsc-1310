@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Cycle Lab - Slideshow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #ffe4f0;
+      background-color: #ffe4e1;
       text-align: center;
       font-family: 'Comic Sans MS', cursive, sans-serif;
       padding: 50px;
@@ -13,80 +14,69 @@
     }
 
     h1 {
+      font-family: 'Luxurious Script', cursive;
       color: #ff1493;
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 20px;
     }
 
-    #slideshow {
+    img {
       max-width: 600px;
       width: 80%;
       border: 5px dashed #ff69b4;
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
-      transition: opacity 1s ease-in-out;
-      opacity: 1;
-      z-index: 1;
-    }
-
-    .fade-out {
-      opacity: 0;
     }
 
     .sparkle {
       position: absolute;
       width: 20px;
       height: 20px;
-      background-image: url('https://i.imgur.com/EdFzYWH.png'); /* sparkle PNG */
-      background-size: cover;
-      animation: sparkle-float 4s infinite ease-in-out;
-      pointer-events: none;
-      z-index: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Emojione_2728.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      animation: fall 6s linear infinite;
     }
 
-    @keyframes sparkle-float {
-      0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
-      50% { opacity: 1; }
-      100% { transform: translateY(-200px) rotate(360deg); opacity: 0; }
+    @keyframes fall {
+      from {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
 
   <h1>✨ My Cycle Lab Slideshow ✨</h1>
-  <img id="slideshow" src="pic 1.jpeg" alt="Slideshow">
+  <img id="slideshow" src="pic1.jpeg" alt="Slideshow">
 
   <script>
-    const images = ["pic 1.jpeg", "pic2.jpeg", "pic 3.jpeg"];
+    const images = ["pic1.jpeg", "pic2.jpeg", "pic3.jpeg"];
     let index = 0;
-    const slideshow = document.getElementById('slideshow');
 
     function changeImage() {
-      slideshow.classList.add('fade-out');
-      setTimeout(() => {
-        index = (index + 1) % images.length;
-        slideshow.src = images[index];
-        slideshow.classList.remove('fade-out');
-      }, 500);
+      index = (index + 1) % images.length;
+      document.getElementById('slideshow').src = images[index];
     }
 
-    setInterval(changeImage, 2500);
+    setInterval(changeImage, 2000);
 
-    // Sparkle generator
-    function createSparkle() {
+    // Add sparkles to the screen
+    for (let i = 0; i < 20; i++) {
       const sparkle = document.createElement('div');
-      sparkle.className = 'sparkle';
-      sparkle.style.left = Math.random() * window.innerWidth + 'px';
-      sparkle.style.top = (window.innerHeight + 20) + 'px';
+      sparkle.classList.add('sparkle');
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.animationDelay = Math.random() * 5 + 's';
       document.body.appendChild(sparkle);
-
-      setTimeout(() => {
-        sparkle.remove();
-      }, 4000);
     }
-
-    setInterval(createSparkle, 300);
   </script>
 
 </body>
 </html>
+
