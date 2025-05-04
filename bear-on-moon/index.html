@@ -3,37 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Bear on the Moon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Luxurious+Script&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
+      background-color: #ffe4f0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      color: white;
+      padding: 50px;
       text-align: center;
-      padding: 20px;
+      overflow: hidden;
     }
-    img {
-      max-width: 600px;
-      width: 90%;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-      margin-top: 20px;
-    }
+
     h1 {
+      font-family: 'Luxurious Script', cursive;
       font-size: 3rem;
-      margin-bottom: 20px;
+      color: #ff1493;
+      margin-bottom: 30px;
+    }
+
+    .moon-container img {
+      width: 70%;
+      max-width: 500px;
+      border-radius: 20px;
+      border: 5px dashed #ffb6c1;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Emojione_2728.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
 
   <h1>🐻 Bear on the Moon 🌙</h1>
-  <img src="bear-on-moon.png" alt="Bear sitting on the moon">
+
+  <div class="moon-container">
+    <img src="bear.png" alt="Bear on the Moon">
+  </div>
+
+  <script>
+    // Sparkle animation
+    function createSparkle() {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = Math.random() * window.innerWidth + 'px';
+      sparkle.style.top = (window.innerHeight + 20) + 'px';
+      sparkle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 6000);
+    }
+
+    setInterval(createSparkle, 400);
+  </script>
 
 </body>
 </html>
+
