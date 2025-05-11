@@ -1,0 +1,89 @@
+/* Additional Styles for Timeline Visual Enhancement and Animation */
+
+/* Timeline Container */
+.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Timeline Items */
+.timeline li {
+  margin: 2rem 0;
+  padding-left: 30px;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Timeline Circle */
+.timeline li::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #66fcf1;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Timeline Line */
+.timeline li::after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: #66fcf1;
+  position: absolute;
+  left: 7px;
+  top: 20px;
+}
+
+/* Timeline Date */
+.timeline li strong {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline Event Description */
+.timeline li span {
+  font-size: 1rem;
+  color: #c5c6c7;
+}
+
+/* Animation for Timeline Items */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-based Animation Trigger */
+.timeline li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .timeline li {
+    margin: 1.5rem 0;
+  }
+
+  .timeline li::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline li::after {
+    left: 5px;
+  }
+}
+
+  
