@@ -4,26 +4,55 @@
   <meta charset="UTF-8">
   <title>Float 1</title>
   <style>
-    .box {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      background-color: pink;
-      float: left;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf2f8;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .box2 {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      background-color: lightblue;
+    header, footer {
+      background: #ffc0cb;
+      text-align: center;
+      padding: 20px;
+    }
+    .sidebar {
+      float: left;
+      width: 30%;
+      background-color: #f8d7e6;
+      padding: 20px;
+    }
+    .main-content {
       float: right;
+      width: 65%;
+      background-color: #ffe4e1;
+      padding: 20px;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Float Layout 1</h1>
+  </header>
 
-  <div class="box"></div>
-  <div class="box2"></div>
+  <div class="clearfix">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Navigation or links</p>
+    </div>
+    <div class="main-content">
+      <h2>Main Content</h2>
+      <p>This is the main section of the page.</p>
+    </div>
+  </div>
 
+  <footer>
+    <p>Float 1 Footer</p>
+  </footer>
 </body>
 </html>
+

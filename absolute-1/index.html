@@ -4,37 +4,31 @@
   <meta charset="UTF-8">
   <title>Absolute 1</title>
   <style>
-    #wrapper {
+    .relative-box {
       position: relative;
-      width: 500px;
-      height: 500px;
-      background: #f0f0f0;
+      width: 600px;
+      height: 300px;
       margin: 50px auto;
+      background-color: #f0e5ff;
+      border: 2px solid #a57fff;
     }
-    .box {
-      width: 100px;
-      height: 100px;
-      background: palevioletred;
+    .absolute-box {
       position: absolute;
-      top: 50px;
-      left: 50px;
-    }
-    .box2 {
-      width: 100px;
+      top: 30px;
+      left: 30px;
+      width: 200px;
       height: 100px;
-      background: lightblue;
-      position: absolute;
-      bottom: 50px;
-      right: 50px;
+      background-color: #caa9ff;
+      border: 2px dashed #a57fff;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-
-  <div id="wrapper">
-    <div class="box"></div>
-    <div class="box2"></div>
+  <h1 style="text-align:center;">Absolute Positioning 1</h1>
+  <div class="relative-box">
+    <div class="absolute-box">I am absolutely positioned inside a relative container!</div>
   </div>
-
 </body>
 </html>
+

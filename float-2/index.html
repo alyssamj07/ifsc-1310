@@ -26,6 +26,27 @@
       border: 3px dashed #ff69b4;
       border-radius: 20px;
       box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+      font-family: Arial, sans-serif;
+      background-color: #f3f0ff;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header, footer {
+      background-color: #b5d5ff;
+      text-align: center;
+      padding: 20px;
+    }
+    .column {
+      float: left;
+      width: 30%;
+      margin: 1.5%;
+      background-color: #dff0ff;
+      padding: 15px;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 </head>
@@ -36,6 +57,28 @@
     <div class="box"></div>
   </div>
 
+  <header>
+    <h1>Float Layout 2</h1>
+  </header>
+
+  <div class="clearfix">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Content here.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Content here.</p>
+    </div>
+    <div class="column">
+      <h2>Column 3</h2>
+      <p>Content here.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Float 2 Footer</p>
+  </footer>
 </body>
 </html>
 

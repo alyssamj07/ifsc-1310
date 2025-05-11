@@ -4,48 +4,39 @@
   <meta charset="UTF-8">
   <title>Absolute 2</title>
   <style>
-    #wrapper {
+    .relative-wrapper {
       position: relative;
-      width: 600px;
+      width: 700px;
       height: 400px;
-      margin: 50px auto;
-      background-color: #fff0f5;
-      border: 2px dashed pink;
+      margin: 0 auto;
+      background-color: #e0f7fa;
+      border: 2px solid #00acc1;
     }
-    .box1 {
-      width: 80px;
-      height: 80px;
-      background: hotpink;
+    .box {
       position: absolute;
-      top: 30px;
-      left: 30px;
+      width: 120px;
+      height: 120px;
+      background-color: #4dd0e1;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
     }
-    .box2 {
-      width: 80px;
-      height: 80px;
-      background: lightcoral;
-      position: absolute;
-      bottom: 30px;
-      right: 30px;
-    }
-    .box3 {
-      width: 80px;
-      height: 80px;
-      background: plum;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+    .box1 { top: 20px; left: 20px; }
+    .box2 { bottom: 20px; right: 20px; }
+    .box3 { top: 20px; right: 20px; }
+    .box4 { bottom: 20px; left: 20px; }
   </style>
 </head>
 <body>
-
-  <div id="wrapper">
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
+  <h1 style="text-align:center;">Absolute Positioning 2</h1>
+  <div class="relative-wrapper">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
   </div>
-
 </body>
 </html>
+
