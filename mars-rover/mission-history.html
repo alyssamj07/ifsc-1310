@@ -25,26 +25,48 @@
   <main id="content" class="container">
     <h2>Mission History</h2>
 
-    <!-- Opportunity Rover Section -->
+    <!-- ✨ Timeline Section -->
+    <ul class="timeline">
+      <li>
+        <strong>2004:</strong> <span>Opportunity lands at Meridiani Planum to begin a 90-sol mission.</span>
+      </li>
+      <li>
+        <strong>2005:</strong> <span>Finds hematite “blueberries” — evidence of past water.</span>
+      </li>
+      <li>
+        <strong>2012:</strong> <span>Curiosity lands in Gale Crater using sky crane system.</span>
+      </li>
+      <li>
+        <strong>2014:</strong> <span>Curiosity finds clay minerals formed in water.</span>
+      </li>
+      <li>
+        <strong>2018:</strong> <span>Contact with Opportunity lost after a Martian dust storm.</span>
+      </li>
+      <li>
+        <strong>2023:</strong> <span>Curiosity still exploring and detecting methane spikes.</span>
+      </li>
+    </ul>
+
+    <!-- Opportunity Section -->
     <section id="opportunity" class="rover-section">
       <h2>Opportunity Rover</h2>
       <div class="images">
         <figure>
           <img src="images/opportunity1.jpg" alt="Opportunity Rover exploring the Martian terrain" />
-          <figcaption>Opportunity rover navigating the plains of Meridiani Planum. (Credit: NASA)</figcaption>
+          <figcaption>Opportunity navigating Meridiani Planum. (Credit: NASA)</figcaption>
         </figure>
         <figure>
-          <img src="images/opportunity2.jpg" alt="Opportunity Rover taking photos of the Martian surface" />
-          <figcaption>Opportunity captures detailed images of Mars' surface. (Credit: NASA)</figcaption>
+          <img src="images/opportunity2.jpg" alt="Opportunity Rover taking photos of Mars" />
+          <figcaption>Detailed images of Mars’ surface. (Credit: NASA)</figcaption>
         </figure>
         <figure>
           <img src="images/opportunity3.jpg" alt="Opportunity Rover and Martian landscape" />
-          <figcaption>The stunning Martian horizon captured by Opportunity. (Credit: NASA)</figcaption>
+          <figcaption>Stunning Martian horizon. (Credit: NASA)</figcaption>
         </figure>
       </div>
 
       <h3>Mission Goals and Overview</h3>
-      <p>Opportunity was part of NASA's Mars Exploration Rover mission, designed to search for and characterize rocks and soils indicating past water activity. Expected to operate for 90 Martian days, it functioned for nearly 15 years.</p>
+      <p>Opportunity was part of NASA's Mars Exploration Rover mission, designed to search for and characterize rocks and soils indicating past water activity. Expected to operate for 90 sols, it functioned for nearly 15 years.</p>
 
       <h3>Launch and Landing Details</h3>
       <ul>
@@ -71,7 +93,7 @@
 
     <hr />
 
-    <!-- Curiosity Rover Section -->
+    <!-- Curiosity Section -->
     <section id="curiosity" class="rover-section">
       <h2>Curiosity Rover</h2>
       <div class="images">
@@ -81,16 +103,16 @@
         </figure>
         <figure>
           <img src="images/curiosity2.jpg" alt="Curiosity Rover using robotic arm" />
-          <figcaption>Curiosity conducting science experiments. (Credit: NASA)</figcaption>
+          <figcaption>Curiosity performing science with its arm. (Credit: NASA)</figcaption>
         </figure>
         <figure>
           <img src="images/curiosity3.jpg" alt="Curiosity Rover capturing high-res images" />
-          <figcaption>Curiosity capturing the Martian landscape. (Credit: NASA)</figcaption>
+          <figcaption>Capturing the Martian landscape. (Credit: NASA)</figcaption>
         </figure>
       </div>
 
       <h3>Mission Goals and Overview</h3>
-      <p>Curiosity is part of NASA's Mars Science Laboratory mission. Its primary goal is to assess whether Mars ever had conditions suitable for life. It continues to explore the Red Planet, studying its climate and geology.</p>
+      <p>Curiosity is part of NASA's Mars Science Laboratory mission. Its goal is to assess whether Mars ever had conditions suitable for life. It continues to explore Mars' climate and geology.</p>
 
       <h3>Launch and Landing Details</h3>
       <ul>
@@ -102,16 +124,16 @@
 
       <h3>Major Discoveries or Accomplishments</h3>
       <ul>
-        <li>Discovered ancient lakebeds and signs of long-lasting water.</li>
-        <li>Detected organic molecules and seasonal methane variation.</li>
-        <li>Provided high-res images of the Martian surface and sky.</li>
+        <li>Found ancient lakebeds and clay minerals.</li>
+        <li>Detected organic molecules and methane variations.</li>
+        <li>Provided high-res photos and atmospheric readings.</li>
       </ul>
 
       <h3>Key Technical or Design Features</h3>
       <ul>
-        <li>Nuclear-powered with extended mission duration.</li>
-        <li>Equipped with laser spectroscopy (ChemCam) and onboard lab tools.</li>
-        <li>Advanced suspension for rocky terrain and steep slopes.</li>
+        <li>Nuclear-powered with a long mission lifespan.</li>
+        <li>Equipped with ChemCam laser and onboard lab.</li>
+        <li>Has advanced wheels and suspension for rough terrain.</li>
       </ul>
     </section>
   </main>
@@ -120,6 +142,28 @@
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
     <p><a href="mailto:your-email@example.com">Contact</a></p>
   </footer>
+
+  <!-- ✨ Timeline Scroll Animation -->
+  <script>
+    const items = document.querySelectorAll('.timeline li');
+
+    function isVisible(el) {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom >= 0;
+    }
+
+    function showItems() {
+      items.forEach(item => {
+        if (isVisible(item)) {
+          item.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', showItems);
+    window.addEventListener('load', showItems);
+  </script>
+
 </body>
 </html>
 
