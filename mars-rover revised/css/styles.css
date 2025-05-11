@@ -1,6 +1,90 @@
-/* Additional Styles for Timeline Visual Enhancement and Animation */
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+  color: #4a2c2a;
+  margin: 0;
+}
 
-/* Timeline Container */
+header {
+  background-color: #ffb6c1;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #c71585;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #8b3a62;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #d63384;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff69b4;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 1rem;
+}
+
+.project-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  background: #fff0f5;
+  border: 2px dashed #ff69b4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+}
+
+footer {
+  text-align: center;
+  background-color: #ffe4f2;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #d63384;
+  text-decoration: none;
+}
+
+/* Additional Styles for Timeline Visual Enhancement and Animation */
 .timeline {
   list-style-type: none;
   position: relative;
@@ -8,7 +92,6 @@
   margin: 0;
 }
 
-/* Timeline Items */
 .timeline li {
   margin: 2rem 0;
   padding-left: 30px;
@@ -18,7 +101,6 @@
   transform: translateY(20px);
 }
 
-/* Timeline Circle */
 .timeline li::before {
   content: '';
   width: 15px;
@@ -31,7 +113,6 @@
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-/* Timeline Line */
 .timeline li::after {
   content: '';
   width: 2px;
@@ -42,7 +123,6 @@
   top: 20px;
 }
 
-/* Timeline Date */
 .timeline li strong {
   font-size: 1.2rem;
   color: #f1f1f1;
@@ -50,13 +130,11 @@
   margin-bottom: 0.5rem;
 }
 
-/* Timeline Event Description */
 .timeline li span {
   font-size: 1rem;
   color: #c5c6c7;
 }
 
-/* Animation for Timeline Items */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -64,13 +142,11 @@
   }
 }
 
-/* Scroll-based Animation Trigger */
 .timeline li.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Media Query for Small Screens */
 @media (max-width: 768px) {
   .timeline li {
     margin: 1.5rem 0;
@@ -85,5 +161,4 @@
     left: 5px;
   }
 }
-
-  
+ 

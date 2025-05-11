@@ -3,42 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mars Project Reflection</title>
+  <title>Alyssa's IFSC-1310 Projects</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Dancing Script', cursive;
       background: url('bows.webp') repeat;
       background-color: #ffe4e1;
-      background-size: 150px 150px;
-      text-align: center;
-      padding: 50px;
-      color: #ff69b4;
+      background-size: 150px;
       margin: 0;
+      padding: 50px;
+      text-align: center;
+      color: #ff69b4;
     }
 
     h1 {
-      font-family: 'Dancing Script', cursive;
       font-size: 3rem;
+      margin-bottom: 10px;
       color: #ff1493;
-      margin-bottom: 20px;
-    }
-
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff0f5;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
-      text-align: left;
     }
 
     p {
-      font-size: 1rem;
-      color: #5c3c49;
-      font-family: Arial, sans-serif;
-      margin-bottom: 20px;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    li {
+      background-color: #ffe4f2;
+      border: 2px dashed #ff69b4;
+      border-radius: 12px;
+      padding: 10px 25px;
+      font-size: 1.2rem;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    li:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #c71585;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff1493;
     }
 
     .writing-section {
@@ -47,42 +66,30 @@
       background-color: #fff0f5;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
-      max-width: 800px;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
-      text-align: left;
     }
 
     .writing-section h2 {
       color: #ff69b4;
-      font-family: 'Dancing Script', cursive;
       font-size: 1.8rem;
       margin-bottom: 15px;
-      font-family: 'Dancing Script', cursive;
-      text-align: center;
     }
 
     .writing-section p {
       font-size: 1rem;
       color: #5c3c49;
       font-family: Arial, sans-serif;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h1>Mars Project Revision and Reflection</h1>
 
-  <div class="content">
-    <p>When I first completed the Mars Rover project, I was proud of the structure and content, but after showing it to a peer and a family member, they gave me valuable feedback. They said the images felt small, the layout was a bit cramped on mobile devices, and the mission timeline was easy to overlook. They also noted that the content was informative but didn’t feel visually engaging.</p>
+  <h1>✨ Alyssa's IFSC-1310 Projects ✨</h1>
+  <p>Click below to check out my completed projects!</p>
 
-    <p>Using that feedback, I made a complete revision. I created a new vertical timeline with glowing animated markers that fade in as you scroll. I adjusted the layout to include larger, clearer images of both Opportunity and Curiosity rovers. I used Flexbox to help organize the image galleries and made sure all pages were fully responsive. Everything was built using progressive enhancement: I started with a solid, semantic HTML base, layered on CSS for styling, and added JavaScript animations that don't break functionality if disabled.</p>
-
-    <p>This project helped me apply everything I’ve learned this semester — HTML structure, positioning (like float and absolute), accessibility, responsive design, and even visual style. I now feel confident using semantic tags, organizing a multi-page project, and improving user experience without sacrificing performance or clarity. If I could go back, I’d start planning file names and folders more carefully to save time later. Still, I’m proud of how far the project has come, and how much I’ve grown from the first draft to the final version.</p>
-
-    <p>Throughout this course, I’ve also learned how to troubleshoot layout issues, work with version control in GitHub, and organize my work in a way that’s clear and scalable. Collaborating with peers and getting feedback made a huge difference in how I approached revisions, especially when thinking about how other users experience the page. It reminded me that design isn't just about making things look pretty—it's about making them understandable, accessible, and enjoyable for everyone.</p>
-
-    <p>In the end, this Mars Rover project represents both my creativity and technical growth. From basic HTML tags to polished, animated pages, I’ve taken the skills we practiced in class and turned them into a final product I’m truly proud of. It reflects not only what I’ve learned, but how much I’ve grown in thinking like a designer and developer.</p>
-  </div>
   <ul>
     <li><a href="prototype-html/">Prototype HTML Assignment</a></li>
     <li><a href="css-demo/">CSS Positioning Demo</a></li>
@@ -93,39 +100,35 @@
     <li><a href="flexbox-froggy/">Flexbox Froggy</a></li>
     <li><a href="css-diner/">CSS Diner (Extra Credit)</a></li>
     <li><a href="mars-rover/">Mars Rover Project</a></li>
-    <li><a href="mars-rover-revised/">Mars Rover Revised</a></li>
+    <li><a href="mars-rover revised/">Mars Rover Project Revised</a></li>
     <li><a href="cycle-lab/">Cycle Lab (Image Slideshow)</a></li>
     <li><a href="bear-on-moon/">Bear on the Moon Project</a></li>
   </ul>
 
   <div class="writing-section">
-    <h2>📝 Progressive Enhancement Reflection</h2>
+    <h2>📝 <a href="https://remix.run/docs/en/main/discussion/progressive-enhancement" target="_blank">
+      Progressive Enhancement Reflection</a></h2>
     <p>
       Progressive enhancement is a design philosophy that focuses on building web experiences that work for everyone, 
       regardless of their browser or device. The idea is to start with a basic, functional version of a website 
       that works on all browsers, and then add enhancements for users with more advanced capabilities. 
-      This ensures accessibility and usability for the widest possible audience. 
-      In this class, we learned that it’s better to build solid HTML first, then layer on CSS and JavaScript gradually 
-      to enhance the user experience.
+      This ensures accessibility and usability for the widest possible audience. In this class, we learned that it’s 
+      better to build solid HTML first, then layer on CSS and JavaScript gradually to enhance the user experience.
     </p>
   </div>
 
   <div class="writing-section">
-    <h2>📘 Mars Project Revision and Reflection</h2>
+    <h2>🪐 Mars Project Reflection</h2>
     <p>
-      When I first completed the Mars Rover project, I was proud of the structure and content, but after showing it to a peer and a family member, they gave me valuable feedback. They said the images felt small, the layout was a bit cramped on mobile devices, and the mission timeline was easy to overlook. They also noted that the content was informative but didn’t feel visually engaging.
+      The Mars Rover project gave me a chance to research two fascinating rovers: Opportunity and Curiosity. I received peer 
+      feedback saying that the images weren’t showing and the design was too plain. To address that, I made sure the image 
+      filenames were all correct, added clearer figure captions, and improved the layout styling in the revised version.
     </p>
     <p>
-      Using that feedback, I made a complete revision. I created a new vertical timeline with glowing animated markers that fade in as you scroll. I adjusted the layout to include larger, clearer images of both Opportunity and Curiosity rovers. I used Flexbox to help organize the image galleries and made sure all pages were fully responsive. Everything was built using progressive enhancement: I started with a solid, semantic HTML base, layered on CSS for styling, and added JavaScript animations that don't break functionality if disabled.
-    </p>
-    <p>
-      This project helped me apply everything I’ve learned this semester — HTML structure, positioning (like float and absolute), accessibility, responsive design, and even visual style. I now feel confident using semantic tags, organizing a multi-page project, and improving user experience without sacrificing performance or clarity. If I could go back, I’d start planning file names and folders more carefully to save time later. Still, I’m proud of how far the project has come, and how much I’ve grown from the first draft to the final version.
-    </p>
-    <p>
-      Throughout this course, I’ve also learned how to troubleshoot layout issues, work with version control in GitHub, and organize my work in a way that’s clear and scalable. Collaborating with peers and getting feedback made a huge difference in how I approached revisions, especially when thinking about how other users experience the page. It reminded me that design isn't just about making things look pretty—it's about making them understandable, accessible, and enjoyable for everyone.
-    </p>
-    <p>
-      In the end, this Mars Rover project represents both my creativity and technical growth. From basic HTML tags to polished, animated pages, I’ve taken the skills we practiced in class and turned them into a final product I’m truly proud of. It reflects not only what I’ve learned, but how much I’ve grown in thinking like a designer and developer.
+      One thing I did well was writing strong, clear content for each rover. What I’d do differently is manage my folders and 
+      filenames better early on to avoid broken images. This project helped me understand not only how to structure and style 
+      pages better, but also how real users view and interact with them. It taught me that presentation and accessibility are 
+      just as important as technical accuracy.
     </p>
   </div>
 
