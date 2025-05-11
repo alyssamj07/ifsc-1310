@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cycle Lab - Slideshow</title>
-  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #ffe4e1;
+      background-color: #fff0f5;
+      font-family: 'Dancing Script', cursive;
       text-align: center;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
       padding: 50px;
-      overflow: hidden;
+      color: #d63384;
     }
 
     h1 {
-      font-family: 'Luxurious Script', cursive;
-      color: #ff1493;
-      font-size: 4rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
     }
 
     img {
-      max-width: 600px;
-      width: 80%;
+      max-width: 90%;
+      height: auto;
       border: 5px dashed #ff69b4;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
-    }
-
-    .sparkle {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Emojione_2728.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.8;
-      animation: fall 6s linear infinite;
-    }
-
-    @keyframes fall {
-      from {
-        transform: translateY(-50px) rotate(0deg);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-      }
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      transition: opacity 0.6s ease;
     }
   </style>
 </head>
 <body>
 
   <h1>✨ My Cycle Lab Slideshow ✨</h1>
-  <img id="slideshow" src="pic1.jpeg" alt="Slideshow">
+  <img id="slideshow" src="pic 1.jpeg" alt="Slideshow image" />
 
   <script>
-    const images = ["pic1.jpeg", "pic2.jpeg", "pic3.jpeg"];
+    const images = ["pic 1.jpeg", "pic 2.jpeg", "pic 3.jpeg"];
     let index = 0;
 
     function changeImage() {
@@ -65,16 +43,7 @@
       document.getElementById('slideshow').src = images[index];
     }
 
-    setInterval(changeImage, 2000);
-
-    // Add sparkles to the screen
-    for (let i = 0; i < 20; i++) {
-      const sparkle = document.createElement('div');
-      sparkle.classList.add('sparkle');
-      sparkle.style.left = Math.random() * 100 + 'vw';
-      sparkle.style.animationDelay = Math.random() * 5 + 's';
-      document.body.appendChild(sparkle);
-    }
+    setInterval(changeImage, 2000); // Every 2 seconds
   </script>
 
 </body>
