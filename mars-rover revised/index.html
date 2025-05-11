@@ -6,6 +6,84 @@
   <title>Mars Rover Revised</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4f2);
+      margin: 0;
+      padding: 0;
+      color: #4a2c2a;
+    }
+    header {
+      background: #ffb6c1;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #c71585;
+    }
+    header h2 {
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #d63384;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project-intro {
+      background-color: #fff0f5;
+      border: 2px dashed #ff69b4;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    section.images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    section.images h3 {
+      font-size: 1.8rem;
+      color: #d63384;
+      margin-top: 2rem;
+    }
+    section.images img {
+      max-width: 90%;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #ffccdd;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      color: #a0526d;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #c71585;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,7 +91,7 @@
     <h2>A Cutely Improved View of Opportunity & Curiosity</h2>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="mission-history.html">Mission History</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
@@ -21,7 +99,7 @@
   </header>
 
   <main>
-    <h2>🌟 Explore the Rovers</h2>
+    <h2 style="text-align:center;">🌟 Explore the Rovers</h2>
     <div class="project-intro">
       Welcome to the revised edition of my Mars Rover Project! This version is not only more stylish — with pretty colors,
       soft gradients, and rounded layouts — but also cleaner and more accessible. Here you’ll learn about two of NASA’s
@@ -31,10 +109,10 @@
 
     <section class="images">
       <h3>Opportunity Rover</h3>
-      <img src="images/opportunity1.jpg" alt="Opportunity Rover on Mars" style="max-width: 90%; margin: 1rem 0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <img src="images/opportunity1.jpg" alt="Opportunity Rover on Mars">
 
       <h3>Curiosity Rover</h3>
-      <img src="images/curiosity1.jpg" alt="Curiosity Rover exploring Mars" style="max-width: 90%; margin: 1rem 0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <img src="images/curiosity1.jpg" alt="Curiosity Rover exploring Mars">
     </section>
   </main>
 

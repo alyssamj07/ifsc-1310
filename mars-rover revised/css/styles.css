@@ -1,102 +1,97 @@
+/* General Page Styles */
 body {
-  font-family: 'Comic Sans MS', cursive;
-  background: linear-gradient(135deg, #ffe4e1, #fff0f5);
-  color: #4a2c2a;
+  font-family: 'Dancing Script', cursive;
+  background-color: #fff0f5;
   margin: 0;
+  padding: 0;
+  color: #5c3c49;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #ffb6c1;
-  padding: 2rem 1rem;
+  background: linear-gradient(to right, #ff9eb3, #ffc0cb);
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #c71585;
   margin: 0;
 }
 
 header h2 {
   font-size: 1.2rem;
-  color: #8b3a62;
+  color: #833c66;
   margin-top: 0.5rem;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
-  gap: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 nav a {
   text-decoration: none;
-  background-color: #d63384;
   color: white;
+  background-color: #ff69b4;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-weight: bold;
   transition: background 0.3s;
 }
 
 nav a:hover {
-  background-color: #ff69b4;
+  background-color: #ff1493;
 }
 
+/* Main Content */
 main {
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
-}
-
-main h2 {
-  font-size: 2rem;
-  color: #d63384;
-  margin-bottom: 1rem;
 }
 
 .project-intro {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  background: #fff0f5;
-  border: 2px dashed #ff69b4;
+  background-color: #ffeef5;
+  border: 2px dashed #ffb6c1;
+  padding: 1.5rem;
   border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(255,182,193,0.3);
 }
 
-footer {
-  text-align: center;
-  background-color: #ffe4f2;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+.images img {
+  max-width: 90%;
+  margin: 1rem auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-footer a {
-  color: #d63384;
-  text-decoration: none;
+/* Timeline */
+.timeline-section {
+  margin-top: 3rem;
 }
 
-/* Additional Styles for Timeline Visual Enhancement and Animation */
 .timeline {
   list-style-type: none;
   position: relative;
   padding-left: 20px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .timeline li {
   margin: 2rem 0;
   padding-left: 30px;
   position: relative;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out forwards;
   opacity: 0;
   transform: translateY(20px);
 }
@@ -123,18 +118,6 @@ footer a {
   top: 20px;
 }
 
-.timeline li strong {
-  font-size: 1.2rem;
-  color: #f1f1f1;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.timeline li span {
-  font-size: 1rem;
-  color: #c5c6c7;
-}
-
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -147,18 +130,19 @@ footer a {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .timeline li {
-    margin: 1.5rem 0;
-  }
-
-  .timeline li::before {
-    width: 12px;
-    height: 12px;
-  }
-
-  .timeline li::after {
-    left: 5px;
-  }
+/* Footer */
+footer {
+  background-color: #ffe4f2;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #b15a7a;
 }
+
+footer a {
+  color: #d63384;
+  text-decoration: none;
+}
+
  
