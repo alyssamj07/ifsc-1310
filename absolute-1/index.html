@@ -4,31 +4,82 @@
   <meta charset="UTF-8">
   <title>Absolute 1</title>
   <style>
-    .relative-box {
+    body {
+      background-color: #f0e5ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
       position: relative;
       width: 600px;
       height: 300px;
-      margin: 50px auto;
-      background-color: #f0e5ff;
-      border: 2px solid #a57fff;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 2px solid #ccc;
     }
-    .absolute-box {
+
+    .box {
       position: absolute;
-      top: 30px;
-      left: 30px;
-      width: 200px;
-      height: 100px;
-      background-color: #caa9ff;
-      border: 2px dashed #a57fff;
-      padding: 10px;
+      width: 80px;
+      height: 80px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navy {
+      background-color: navy;
+      top: 0;
+      left: 0;
+    }
+
+    .teal {
+      background-color: teal;
+      top: 0;
+      right: 0;
+    }
+
+    .blue {
+      background-color: royalblue;
+      bottom: 0;
+      left: 0;
+    }
+
+    .aqua {
+      background-color: aqua;
+      color: black;
+      bottom: 0;
+      right: 0;
+    }
+
+    .footer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #444;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center;">Absolute Positioning 1</h1>
-  <div class="relative-box">
-    <div class="absolute-box">I am absolutely positioned inside a relative container!</div>
+
+  <h1>Absolute Positioning – Exercise 3</h1>
+
+  <div class="container">
+    <div class="box navy">Navy</div>
+    <div class="box teal">Teal</div>
+    <div class="box blue">Blue</div>
+    <div class="box aqua">Aqua</div>
+    <div class="footer">Footer</div>
   </div>
+
 </body>
 </html>
 
