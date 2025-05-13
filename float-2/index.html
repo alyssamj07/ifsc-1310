@@ -6,79 +6,50 @@
   <style>
     body {
       background-color: #fff0f8;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      padding: 40px;
+      font-family: Arial, sans-serif;
       margin: 0;
+      padding: 40px;
       text-align: center;
-    }
-
-    .container {
-      width: 80%;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: auto;
     }
 
     .box {
-      width: 45%;
-      height: 300px;
-      background-color: lavender;
       float: left;
-      margin: 20px 2.5%;
-      border: 3px dashed #ff69b4;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
-      font-family: Arial, sans-serif;
-      background-color: #f3f0ff;
-      max-width: 960px;
-      margin: 0 auto;
+      width: 22%;
+      height: 100px;
+      margin: 1%;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
     }
-    header, footer {
-      background-color: #b5d5ff;
-      text-align: center;
-      padding: 20px;
-    }
-    .column {
-      float: left;
-      width: 30%;
-      margin: 1.5%;
-      background-color: #dff0ff;
-      padding: 15px;
-    }
-    .clearfix::after {
-      content: "";
-      display: table;
+
+    .navy { background-color: navy; }
+    .teal { background-color: teal; }
+    .blue { background-color: royalblue; }
+    .aqua { background-color: aqua; color: black; }
+
+    footer {
       clear: both;
+      background-color: #555;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
+  <div class="box navy">Navy</div>
+  <div class="box teal">Teal</div>
+  <div class="box blue">Blue</div>
+  <div class="box aqua">Aqua</div>
 
-  <header>
-    <h1>Float Layout 2</h1>
-  </header>
+  <footer>Footer</footer>
 
-  <div class="clearfix">
-    <div class="column">
-      <h2>Column 1</h2>
-      <p>Content here.</p>
-    </div>
-    <div class="column">
-      <h2>Column 2</h2>
-      <p>Content here.</p>
-    </div>
-    <div class="column">
-      <h2>Column 3</h2>
-      <p>Content here.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>Float 2 Footer</p>
-  </footer>
 </body>
 </html>
 
