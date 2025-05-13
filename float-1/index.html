@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Float 1</title>
   <style>
     body {
@@ -9,50 +9,45 @@
       background-color: #fdf2f8;
       max-width: 900px;
       margin: 0 auto;
-    }
-    header, footer {
-      background: #ffc0cb;
-      text-align: center;
       padding: 20px;
     }
-    .sidebar {
+
+    .box {
       float: left;
-      width: 30%;
-      background-color: #f8d7e6;
-      padding: 20px;
+      width: 45%;
+      height: 100px;
+      margin: 2.5%;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .main-content {
-      float: right;
-      width: 65%;
-      background-color: #ffe4e1;
-      padding: 20px;
-    }
-    .clearfix::after {
-      content: "";
-      display: table;
+
+    .navy { background-color: navy; }
+    .teal { background-color: teal; }
+    .blue { background-color: royalblue; }
+    .aqua { background-color: aqua; color: black; }
+
+    footer {
       clear: both;
+      text-align: center;
+      background-color: #555;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Float Layout 1</h1>
-  </header>
 
-  <div class="clearfix">
-    <div class="sidebar">
-      <h2>Sidebar</h2>
-      <p>Navigation or links</p>
-    </div>
-    <div class="main-content">
-      <h2>Main Content</h2>
-      <p>This is the main section of the page.</p>
-    </div>
-  </div>
+  <div class="box navy">Navy</div>
+  <div class="box teal">Teal</div>
+  <div class="box blue">Blue</div>
+  <div class="box aqua">Aqua</div>
 
-  <footer>
-    <p>Float 1 Footer</p>
-  </footer>
+  <footer>Footer</footer>
+
 </body>
 </html>
 
