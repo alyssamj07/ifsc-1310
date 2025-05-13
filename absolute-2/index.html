@@ -4,39 +4,82 @@
   <meta charset="UTF-8">
   <title>Absolute 2</title>
   <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
     .relative-wrapper {
       position: relative;
       width: 700px;
       height: 400px;
       margin: 0 auto;
-      background-color: #e0f7fa;
+      background-color: #ffffff;
       border: 2px solid #00acc1;
     }
+
     .box {
       position: absolute;
-      width: 120px;
-      height: 120px;
-      background-color: #4dd0e1;
+      width: 80px;
+      height: 80px;
       color: white;
+      font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .navy {
+      background-color: navy;
+      top: 0;
+      left: 0;
+    }
+
+    .teal {
+      background-color: teal;
+      top: 0;
+      right: 0;
+    }
+
+    .blue {
+      background-color: royalblue;
+      bottom: 0;
+      left: 0;
+    }
+
+    .aqua {
+      background-color: aqua;
+      color: black;
+      bottom: 0;
+      right: 0;
+    }
+
+    .footer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      padding: 10px 20px;
       font-weight: bold;
     }
-    .box1 { top: 20px; left: 20px; }
-    .box2 { bottom: 20px; right: 20px; }
-    .box3 { top: 20px; right: 20px; }
-    .box4 { bottom: 20px; left: 20px; }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center;">Absolute Positioning 2</h1>
+
+  <h1>Absolute Positioning – Exercise 4</h1>
+
   <div class="relative-wrapper">
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
-    <div class="box box4">Box 4</div>
+    <div class="box navy">Navy</div>
+    <div class="box teal">Teal</div>
+    <div class="box blue">Blue</div>
+    <div class="box aqua">Aqua</div>
+    <div class="footer">Footer</div>
   </div>
+
 </body>
 </html>
 
