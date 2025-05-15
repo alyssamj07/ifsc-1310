@@ -54,21 +54,25 @@
       margin-bottom: 2rem;
       text-align: center;
     }
-    section.images {
+    .image-box {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
     }
-    section.images h3 {
-      font-size: 1.8rem;
-      color: #d63384;
-      margin-top: 2rem;
-    }
-    section.images img {
-      max-width: 90%;
-      margin: 1rem 0;
+    .image-card {
+      background-color: #fff8fb;
+      border: 2px dashed #ffc0cb;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      max-width: 300px;
+      box-shadow: 0 0 12px rgba(255, 182, 193, 0.2);
+      text-align: center;
+    }
+    .image-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
     }
     footer {
       background-color: #ffccdd;
@@ -102,16 +106,19 @@
     <div class="project-intro">
       Welcome to the revised edition of my Mars Rover Project! Here you’ll learn about two of NASA’s
       most iconic rovers: <strong>Opportunity</strong> and <strong>Curiosity</strong>. Their missions paved the way for our
-      understanding of the Red Planet, Mars. Use the menu above to dive into their stories and see what I’ve created!
+      understanding of the Red Planet, Mars.
     </div>
 
-    <section class="images">
-      <h3>Opportunity Rover</h3>
-      <img src="assets/img/opportunity-1.jpg" alt="Opportunity Rover on Mars">
-
-      <h3>Curiosity Rover</h3>
-      <img src="assets/img/curiosity-1.jpg" alt="Curiosity Rover exploring Mars">
-    </section>
+    <div class="image-box">
+      <div class="image-card">
+        <img src="assets/img/opportunity-1.jpg" alt="Opportunity Rover on Mars">
+        <p><strong>Opportunity Rover</strong><br>Explored Mars for nearly 15 years, far beyond its original mission.</p>
+      </div>
+      <div class="image-card">
+        <img src="assets/img/curiosity-1.jpg" alt="Curiosity Rover exploring Mars">
+        <p><strong>Curiosity Rover</strong><br>Still active today, exploring Gale Crater and Mount Sharp.</p>
+      </div>
+    </div>
   </main>
 
   <footer>
