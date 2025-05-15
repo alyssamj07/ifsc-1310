@@ -3,27 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ – Curiosity & Opportunity</title>
+  <title>FAQ - Mars Rover Revised</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
   <style>
     body {
       font-family: 'Dancing Script', cursive;
-      background: linear-gradient(to bottom, #fff0f5, #ffe4f2);
+      background-color: #fff0f5;
+      color: #4a2c2a;
       margin: 0;
       padding: 0;
-      color: #4a2c2a;
     }
     header {
-      background: #ffb6c1;
-      padding: 2rem;
+      background-color: #ffb6c1;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #c71585;
+      padding: 2rem;
     }
     nav ul {
       list-style: none;
@@ -31,7 +24,6 @@
       display: flex;
       justify-content: center;
       gap: 1rem;
-      margin-top: 1rem;
     }
     nav a {
       text-decoration: none;
@@ -40,41 +32,36 @@
     }
     main {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
     }
-    main h2 {
+    h2 {
+      color: #c71585;
       text-align: center;
-      margin-bottom: 2rem;
     }
-    section {
-      background-color: #fff0f5;
-      border: 2px dashed #ff69b4;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
-      margin-bottom: 1.5rem;
+    .faq {
+      margin-top: 2rem;
     }
-    section h3 {
-      color: #d63384;
+    .faq dt {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .faq dd {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
     }
     footer {
       background-color: #ffccdd;
       text-align: center;
-      padding: 1.5rem;
+      padding: 1rem;
       margin-top: 3rem;
-      color: #a0526d;
-      font-size: 0.95rem;
-    }
-    footer a {
-      color: #c71585;
-      text-decoration: none;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header role="banner">
-    <h1><a href="index.html">NASA Mars Rovers</a></h1>
+  <header>
+    <h1>FAQ - Mars Rovers</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -84,47 +71,29 @@
     </nav>
   </header>
 
-  <main role="main">
-    <h2>Frequently Asked Questions: Curiosity & Opportunity</h2>
+  <main>
+    <h2>Frequently Asked Questions</h2>
+    <dl class="faq">
+      <dt>What are the Mars rovers?</dt>
+      <dd>NASA's Mars rovers are robotic vehicles designed to explore the surface of Mars.</dd>
 
-    <section>
-      <h3>1. What is the Curiosity rover?</h3>
-      <p>Curiosity is a car-sized rover launched by NASA in 2011 to explore Gale Crater on Mars. It landed in August 2012 and continues to study Mars’ climate and geology.</p>
-    </section>
+      <dt>What is the purpose of these missions?</dt>
+      <dd>To study Mars’ climate, geology, and potential for life, and to prepare for future human exploration.</dd>
 
-    <section>
-      <h3>2. What did Curiosity discover on Mars?</h3>
-      <p>Curiosity found organic molecules, evidence of ancient lakes, methane gas variations, and clay-rich soil — all of which suggest Mars may have once supported microbial life.</p>
-    </section>
+      <dt>Which rovers are covered in this project?</dt>
+      <dd>This project highlights Opportunity and Curiosity, two of the most successful NASA rovers.</dd>
 
-    <section>
-      <h3>3. What powers the Curiosity rover?</h3>
-      <p>Curiosity uses a nuclear-powered MMRTG (Multi-Mission Radioisotope Thermoelectric Generator), which gives it a long-lasting energy source for extended missions.</p>
-    </section>
+      <dt>How long did Opportunity operate?</dt>
+      <dd>Opportunity was only expected to last 90 days, but it operated for nearly 15 years — from 2004 to 2018.</dd>
 
-    <section>
-      <h3>4. What is the Opportunity rover?</h3>
-      <p>Opportunity was one of NASA’s twin Mars Exploration Rovers, launched in 2003 and landed in 2004. It vastly outlived its planned mission, operating for nearly 15 years.</p>
-    </section>
+      <dt>What was Opportunity’s mission?</dt>
+      <dd>Its mission was to search for signs of past water activity on Mars. It discovered evidence of ancient lakes and groundwater.</dd>
 
-    <section>
-      <h3>5. What were Opportunity’s biggest discoveries?</h3>
-      <p>Opportunity discovered hematite spheres ("blueberries"), signs of past water activity, and evidence that Mars had wet conditions in its distant past.</p>
-    </section>
+      <dt>When did Curiosity land on Mars?</dt>
+      <dd>Curiosity landed on August 6, 2012, in Gale Crater, and it is still active today.</dd>
 
-    <section>
-      <h3>6. How did Opportunity get its power?</h3>
-      <p>Opportunity was powered by solar panels. It eventually stopped communicating after a massive dust storm in 2018 blocked its sunlight.</p>
-    </section>
+      <dt>What is Curiosity’s mission?</dt>
+      <dd>Curiosity is studying Mars’ climate and geology, and assessing whether the planet could have ever supported microbial life.</dd>
 
-    <section>
-      <h3>7. Are either of the rovers still active?</h3>
-      <p>Curiosity is still active and exploring Mars today. Opportunity's mission ended in 2018 after it lost power, but it sent back valuable data over its long lifespan.</p>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
-  </footer>
-</body>
-</html>
+      <dt>How are the rovers powered?</dt>
+      <dd>Opportunity used solar panels, while Curiosity runs on a nuclear power source (radio
