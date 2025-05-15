@@ -32,7 +32,7 @@
     }
     main {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
     h2, h3 {
@@ -54,11 +54,29 @@
       margin-top: 3rem;
       text-align: center;
     }
-    .faq-images img {
-      max-width: 90%;
+    .image-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .image-card {
+      background-color: #fff8fb;
+      border: 2px dashed #ffc0cb;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2rem;
+      padding: 1rem;
+      max-width: 300px;
+      box-shadow: 0 0 12px rgba(255, 182, 193, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .image-card:hover {
+      transform: scale(1.03);
+    }
+    .image-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
     }
     footer {
       background-color: #ffccdd;
@@ -116,11 +134,17 @@
     </dl>
 
     <section class="faq-images">
-      <h3>Opportunity Rover – Perseverance Valley</h3>
-      <img src="assets/img/opportunity-3.jpg" alt="Opportunity Rover - Perseverance Valley">
-
-      <h3>Curiosity Rover – Mount Sharp Climb</h3>
-      <img src="assets/img/curiosity-3.jpg" alt="Curiosity Rover climbing Mount Sharp">
+      <h3>Rover Exploration Highlights</h3>
+      <div class="image-box">
+        <div class="image-card">
+          <img src="assets/img/opportunity-3.jpg" alt="Opportunity Rover - Perseverance Valley">
+          <p><strong>Opportunity 3</strong><br>Final journey through Perseverance Valley before the end of its mission in 2018.</p>
+        </div>
+        <div class="image-card">
+          <img src="assets/img/curiosity-3.jpg" alt="Curiosity Rover - Mount Sharp">
+          <p><strong>Curiosity 3</strong><br>Climbing Mount Sharp to explore higher layers of Martian history.</p>
+        </div>
+      </div>
     </section>
   </main>
 
