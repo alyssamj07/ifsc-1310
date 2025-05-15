@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mission History – Mars Rovers</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <style>
     body {
       font-family: 'Dancing Script', cursive;
@@ -62,26 +63,37 @@
       box-shadow: 0 0 10px rgba(255,182,193,0.3);
       text-align: center;
     }
+
     .image-box {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
+      margin-top: 2rem;
     }
+
     .image-card {
       background-color: #fff8fb;
       border: 2px dashed #ffc0cb;
       border-radius: 12px;
       padding: 1rem;
-      max-width: 300px;
+      max-width: 420px;
       box-shadow: 0 0 12px rgba(255, 182, 193, 0.2);
       text-align: center;
     }
+
     .image-card img {
       max-width: 100%;
       border-radius: 10px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    .image-card ul {
+      padding-left: 1rem;
+      text-align: left;
+    }
+
     .timeline-section {
       margin-top: 3rem;
     }
@@ -124,6 +136,7 @@
       left: 7px;
       top: 20px;
     }
+
     footer {
       background-color: #ffccdd;
       text-align: center;
@@ -163,12 +176,25 @@
 
     <div class="image-box">
       <div class="image-card">
-        <img src="assets/img/opportunity-1.jpg" alt="Opportunity Rover on Mars">
-        <p><strong>Opportunity Rover</strong><br>Operated from 2004 to 2018, traveling 28 miles across Martian terrain.</p>
+        <img src="assets/img/opportunity-2.jpg" alt="Opportunity Rover exploring the Martian terrain">
+        <ul>
+          <li><strong>Launch Date:</strong> July 7, 2003</li>
+          <li><strong>Landing Date:</strong> January 25, 2004</li>
+          <li><strong>Landing Site:</strong> Meridiani Planum</li>
+          <li><strong>Mission Duration:</strong> 15 Earth years</li>
+          <li><strong>Major Discoveries:</strong> Evidence of water, hematite "blueberries", long-distance travel</li>
+        </ul>
       </div>
+
       <div class="image-card">
-        <img src="assets/img/curiosity-1.jpg" alt="Curiosity Rover on Mars">
-        <p><strong>Curiosity Rover</strong><br>Active since 2012, exploring Mount Sharp and analyzing Martian soil.</p>
+        <img src="assets/img/curiosity-2.jpg" alt="Curiosity Rover using robotic arm">
+        <ul>
+          <li><strong>Launch Date:</strong> November 26, 2011</li>
+          <li><strong>Landing Date:</strong> August 6, 2012</li>
+          <li><strong>Landing Site:</strong> Gale Crater</li>
+          <li><strong>Mission Duration:</strong> Ongoing</li>
+          <li><strong>Major Discoveries:</strong> Organic molecules, methane variations, lakebed sediments</li>
+        </ul>
       </div>
     </div>
 
